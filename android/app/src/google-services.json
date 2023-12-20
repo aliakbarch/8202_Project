@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "835093936280",
+    "firebase_url": "https://sipadu-halteng-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sipadu-halteng",
+    "storage_bucket": "sipadu-halteng.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835093936280:android:f70754b059471d671278ed",
+        "android_client_info": {
+          "package_name": "com.example.sipadu_8202"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835093936280-ripogeiqgaj8o36bjje1iv5bdtj5sihm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sipadu_8202",
+            "certificate_hash": "f8e586b8e565d504747ec4483298f9cb1e1972f1"
+          }
+        },
+        {
+          "client_id": "835093936280-abb8du2nsttaa1ikq6ngtvdm0bqs96h8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrt7FWJI4aRhABd-cy2Cy_UDa5B7Mg9fU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835093936280-7h7tgcs6tk1ljuvbb7h8k3vest946ail.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "835093936280-54ngmkn303166rp1odmdor1ealo7cu03.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sipadu8202"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
