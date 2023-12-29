@@ -137,14 +137,14 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 10),
 
                 //forgot password
-                SizedBox(
+                const SizedBox(
                   width: 500.0,
                   height: 50.0,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                    padding: EdgeInsets.symmetric(horizontal: 25.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
-                      children: const [
+                      children: [
                         Text(
                           'Lupa Password?',
                           style: TextStyle(color: Colors.grey),
@@ -163,10 +163,10 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 25.0),
 
                 //continue with
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 25.0),
                   child: Row(
-                    children: const [
+                    children: [
                       Expanded(child: Divider(
                         thickness: 0.5,
                         color: Colors.black54,
@@ -174,8 +174,10 @@ class _LoginPageState extends State<LoginPage> {
                       ),
 
                       Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: Text('Sign In Dengan'),
+                        padding:
+                        EdgeInsets.symmetric(horizontal: 10.0),
+                        child:
+                        Text('Sign In Dengan'),
                       ),
                       Expanded(
                           child: Divider(
@@ -214,7 +216,7 @@ class _LoginPageState extends State<LoginPage> {
                     AnimatedContainer(
                       padding: EdgeInsets.only(
                           top: (isHover) ? 10 : 12, bottom: !(isHover) ? 10 : 12),
-                      duration: Duration(milliseconds: 200),
+                      duration: const Duration(milliseconds: 200),
                       child: InkWell(
                         onHover: (val){
                           setState(() {

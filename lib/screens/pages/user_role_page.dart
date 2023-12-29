@@ -43,7 +43,7 @@ class _UserRoleState extends State<UserRole> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("BERHASIL MASUK SEBAGAI ${user.email!}"),
+            Text("BERHASIL MASUK SEBAGAI ${user.email!}", textAlign: TextAlign.center,),
             const SizedBox(height: 25.0),
             MaterialButton(
               shape: const RoundedRectangleBorder(

@@ -30,8 +30,8 @@ class _linkPageState extends State<linkPage> {
       appBar: AppBar(
         backgroundColor: Colors.green,
         centerTitle: true,
-        title: Row(
-          children: const [
+        title: const Row(
+          children: [
             Text("SILAHKAN PILIH UNIT KERJA",
               textAlign: TextAlign.left,
               style: TextStyle(

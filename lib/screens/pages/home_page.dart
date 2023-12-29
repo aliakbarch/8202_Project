@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:sipadu_8202/screens/pages/auth_page.dart';
 import 'package:sipadu_8202/screens/pages/link_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../components/square_tile.dart';
@@ -11,13 +12,26 @@ class HomePage extends StatelessWidget {
 
   final websiteuri = Uri.parse('http://www.linkedin.com/in/ali-championa');
 
-  //Sign Out User
-  void signUserOut(){
-    FirebaseAuth.instance.signOut();
-  }
+  // //Sign Out User
+  // void signUserOut(){
+  //   FirebaseAuth.instance.signOut();
+  //   Navigator.of(context, rootNavigator: true).pop(context);
+  // }
 
   @override
   Widget build(BuildContext context) {
+
+    //Sign Out User
+    void signUserOut(){
+      FirebaseAuth.instance.signOut();
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) =>  AuthPage(), //Ke Home Mitra dsbnya
+        ),
+      );
+    }
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
