@@ -1,5 +1,6 @@
 
 import 'dart:core';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'linked_page.dart';
@@ -30,16 +31,6 @@ class _linkPageState extends State<linkPage> {
       appBar: AppBar(
         backgroundColor: Colors.green,
         centerTitle: true,
-        title: const Row(
-          children: [
-            Text("SILAHKAN PILIH UNIT KERJA",
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                  fontSize: 14
-              ),
-            )
-          ],
-        ),
       ),
       body:
 
@@ -48,6 +39,16 @@ class _linkPageState extends State<linkPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+
+            const Text("SILAHKAN PILIH UNIT KERJA",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ) ,
+
+          SizedBox(height: 25,),
 
           SizedBox(
           width: 500.0,

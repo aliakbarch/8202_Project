@@ -44,9 +44,11 @@ class linked extends StatelessWidget {
         title: Row(
           children: [
             Text("UNIT KERJA ${aText.toUpperCase()}",
-              textAlign: TextAlign.left,
+              textAlign: TextAlign.center,
               style: const TextStyle(
-                  fontSize: 14
+                  fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.white
               ),
             )
           ],
@@ -83,17 +85,18 @@ class linked extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        shape: const CircularNotchedRectangle(),
+      bottomNavigationBar: const BottomAppBar(
+        shape: CircularNotchedRectangle(),
         notchMargin: 5,
         clipBehavior: Clip.antiAlias,
         child: Row(
-          children: const [
+          children: [
             Text("Link dengan tanda * menggunakan VPN",
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.green,
-                  fontSize: 16
+                  fontSize: 16,
+                fontWeight: FontWeight.bold
               ),
             )
           ],

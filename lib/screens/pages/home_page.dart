@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:sipadu_8202/screens/pages/auth_page.dart';
+import 'package:sipadu_8202/screens/pages/geotagging.dart';
 import 'package:sipadu_8202/screens/pages/link_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../components/square_tile.dart';
@@ -42,6 +43,7 @@ class HomePage extends StatelessWidget {
             Text("Halo ${user.email!}",
                 textAlign: TextAlign.left,
                 style: const TextStyle(
+                  color: Colors.white,
                   fontSize: 15
                 ),
             )
@@ -77,7 +79,7 @@ class HomePage extends StatelessWidget {
                       Navigator.of(context).push(
                           MaterialPageRoute(
                               builder: (context) {
-                                return const linkPage();
+                                return const geotag();
                               }
                           ));
                     },

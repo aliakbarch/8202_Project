@@ -47,9 +47,9 @@ class _UserDataState extends State<UserData> {
 
     //Create Map
     Map<String, dynamic> userData = {
-      "Nama Depan": namaDepanController.text,
-      "Nama Belakang": namaBelakangController.text,
-      "Nomor Telepon": nomorTelpController.text,
+      "NamaDepan": namaDepanController.text,
+      "NamaBelakang": namaBelakangController.text,
+      "NomorTelepon": nomorTelpController.text,
       "Gender": select,
       "Role": currentItemSelected,
     };

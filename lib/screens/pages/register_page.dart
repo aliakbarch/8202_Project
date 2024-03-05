@@ -35,6 +35,7 @@ class _RegisterPageState extends State<RegisterPage> {
   var currentItemSelected = "Non-Pegawai";
   var role = "Non-Pegawai";
   var select;
+  bool isHover = false;
 
   //Sign up User
   signUpUser() async{
@@ -70,9 +71,9 @@ class _RegisterPageState extends State<RegisterPage> {
       Map<String, dynamic> userData = {
         "Email": emailController.text,
         "Password": passwordController.text,
-        "Nama Depan": namaDepanController.text,
-        "Nama Belakang": namaBelakangController.text,
-        "Nomor Telepon": nomorTelpController.text,
+        "NamaDepan": namaDepanController.text,
+        "NamaBelakang": namaBelakangController.text,
+        "NomorTelepon": nomorTelpController.text,
         "Gender": select,
         "Role": currentItemSelected,
       };
@@ -243,14 +244,26 @@ class _RegisterPageState extends State<RegisterPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text('Sudah Punya Akun?'),
+
                       const SizedBox(width: 4),
-                      GestureDetector(
-                        onTap: widget.onTap,
-                        child: const Text(
-                          'Login Disini',
-                          style: TextStyle(
-                            color: Colors.green,
-                            fontWeight: FontWeight.bold,
+
+                      AnimatedContainer(
+                        padding: EdgeInsets.only(
+                            top: (isHover) ? 10 : 12, bottom: !(isHover) ? 10 : 12),
+                        duration: const Duration(milliseconds: 200),
+                        child: InkWell(
+                          onHover: (val){
+                            setState(() {
+                              isHover = val;
+                            });
+                          },
+                          onTap: widget.onTap,
+                          child: const Text(
+                            'Login Disini',
+                            style: TextStyle(
+                              color: Colors.green,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
